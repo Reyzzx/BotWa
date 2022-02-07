@@ -1,0 +1,45 @@
+{
+  "name": "WaBot-MD",
+  "version": "0.0.1",
+  "description": "Simple whatsapp bot with multi device.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "irfanhariyanto",
+  "license": "MIT",
+  "dependencies": {
+    "@adiwajshing/baileys-md": "github:adiwajshing/baileys#multi-device",
+    "@vitalets/google-translate-api": "^7.0.0",
+    "awesome-phonenumber": "^2.64.0",
+    "axios": "^0.24.0",
+    "brainly-scraper": "^1.0.3",
+    "chalk": "^4.1.2",
+    "child_process": "^1.0.2",
+    "cloudscraper": "^4.6.0",
+    "clui": "^0.3.6",
+    "fetch": "^1.1.0",
+    "figlet": "^1.5.2",
+    "file-type": "^16.5.3",
+    "fluent-ffmpeg": "^2.1.2",
+    "form-data": "^4.0.0",
+    "fs": "0.0.1-security",
+    "google-it": "^1.6.2",
+    "human-readable": "^0.2.1",
+    "hxz-api": "^1.0.1",
+    "jsdom": "^19.0.0",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.34",
+    "node-fetch": "^2.6.4",
+    "pino": "^7.2.0",
+    "qs": "^6.10.2",
+    "util": "^0.12.4",
+    "wa-sticker-formatter": "^4.2.0",
+    "xfarr-api": "^1.0.0",
+    "yt-search": "^2.10.2"
+  }
+}
