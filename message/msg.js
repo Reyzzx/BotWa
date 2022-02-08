@@ -86,7 +86,7 @@ module.exports = async(conn, msg, m, setting) => {
 		const isPrivate = msg.key.remoteJid.endsWith('@s.whatsapp.net')
 		const sender = isGroup ? (msg.key.participant ? msg.key.participant : msg.participant) : msg.key.remoteJid
 		const isOwner = ownerNumber.includes(sender)
-                const zahra = ["6285376700928@s.whatsapp.net"]
+                const zahra = ["6285158338027@s.whatsapp.net"]
                 const isZahra = zahra.includes(sender)
 		const pushname = msg.pushName || "Kak"
 		const q = chats.slice(command.length + 1, chats.length)
@@ -619,7 +619,7 @@ let anu = allmenu(conn, prefix, pushname, ucapanWaktu)
                             }, {
                                 callButton: {
                                     displayText: 'Call Owner!',
-                                    phoneNumber: '+6285732415700'
+                                    phoneNumber: '+6285158338027'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -695,10 +695,9 @@ case prefix+'donate': case prefix +'donasi': case prefix+'hargasewa':
 tekssa = `Halo @${sender.split("@s.whatsapp.net")[0]} 👋
 Berikut adalah list harga untuk sewa bot ini
 *💸Payment💰*
-*•Gopay:* 083870705906
-*•Dana:* 083870705906
-*•Ovo:* 083870705906
-*•Pulsa:* 081528743676(Up +5)
+*•Gopay:* 082138746029
+*•Shopeepay:* 082138746029
+*•Pulsa:* 085158338027(Up +5)
 
 *Note:
 =>Untuk Sewa/Memasukkan Bot Kedalam Group, cukup membayar Rp20.000
@@ -708,7 +707,7 @@ Berikut adalah list harga untuk sewa bot ini
 conn.sendMessage(from, { text: tekssa, contextInfo: { mentionedJid: [sender]} }, { quoted: m })
 break
 			case prefix+'owner':
-			    sendContact(from, '6285732415700', 'Owner Sneazy', m)
+			    sendContact(from, '6285158338027', 'Owner FvckRey', m)
 			    break
 	/*<------- Converter/Tools ------->*/
 			/*case prefix+'sticker': case prefix+'stiker': case prefix+'s':
@@ -833,7 +832,7 @@ conn.sendMessage(from, {
 				 video: { url: res.data.video },
 				 caption: `✅Sukses Download Video Tiktok\n\nJika ingin mengubah ke audio/music, tekan tombol dibawah, jika tidak terlihat ketik ${prefix}tiktokaudio ${q}`,
 				 buttons: [{buttonId: `${prefix}tiktokaudio ${args[1]}`, buttonText: { displayText: "Audio" }, type: 1 }],
-				 footer: "Create by Sneazy-Bot"
+				 footer: "Create by FvckRey-Bot"
 			      }, { quoted: msg })
 			    .catch(() => reply(mess.error.api))
 			    break
@@ -848,7 +847,7 @@ conn.sendMessage(from, {
 				 caption: `✅Sukses Download Video Twitter
 •Desk: ${data.desc}\n\n${mono}Jika ingin melihat kembali menu bot, silahkan klik tombol dibawah, jika tidak terlihat ketik ${prefix}menu${mono}`,
 				 buttons: [{buttonId: `${prefix}mnu`, buttonText: { displayText: "≻ Back To Menu!" }, type: 1 }],
-				 footer: "Create by Sneazy-Bot"
+				 footer: "Create by FvckRey-Bot"
 			      }, { quoted: msg })
  }).catch(() => reply(mess.error.api))
  break
@@ -863,7 +862,7 @@ conn.sendMessage(from, {
 				 video: { url: data.medias[0].url },
 				 caption: `✅Sukses Download Video Facebook\n\n${mono}Jika ingin melihat kembali menu bot, silahkan klik tombol dibawah, jika tidak terlihat ketik ${prefix}menu${mono}`,
 				 buttons: [{buttonId: `${prefix}mnu`, buttonText: { displayText: "≻ Back To Menu!" }, type: 1 }],
-				 footer: "Create by Sneazy-Bot"
+				 footer: "Create by FvckRey-Bot"
 			      }, { quoted: msg })
  })
  } catch(err) {
@@ -874,7 +873,7 @@ conn.sendMessage(from, {
 •Title: ${data.title}
 •Size: ${data.filesize}\n\n${mono}Jika ingin melihat kembali menu bot, silahkan klik tombol dibawah, jika tidak terlihat ketik ${prefix}menu${mono}`,
 				 buttons: [{buttonId: `${prefix}mnu`, buttonText: { displayText: "≻ Back To Menu!" }, type: 1 }],
-				 footer: "Create by Sneazy-Bot"
+				 footer: "Create by FvckRey-Bot"
 			      }, { quoted: msg })
 			}
 			break
