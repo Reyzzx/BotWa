@@ -44,6 +44,8 @@ exports.allmenu = (conn, prefix, pushname, ucapanWaktu) => {
 *Anime*
 ≻ ${prefix}loli
 ≻ ${prefix}waifu
+≻ ${prefix}hentai
+≻ ${prefix}neko
 
 *Owner Only*
 ≻ ${prefix}cekall
