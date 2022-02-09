@@ -484,7 +484,7 @@ reply(teks.trim())
 							break
 case prefix+'cekfxc7': case prefix+'cekfxc7key':
 if (!q) return reply(`Contoh:\n${command} beta`)
-let p = await fetchJson(`https://api-xcoders.xyz/api/cekkey?apikey=${q}`)
+let p = await fetchJson(`https://api-xcoders.xyz/api/search/brainly?query=Sejarah%20indonesia&apikey=OGYWHgQLvo`)
 reply(`Status Fxc7 Api
 •Premium: ${p.result.premium ? 'Ya' : 'Tidak'}
 •Apikey: ${p.result.apikey}
@@ -588,7 +588,23 @@ conn.sendMessage(from, { image: { url: `${res.url}` }, caption: `${res.url}`}, {
 	break
 case prefix+'loli':
 try {
-conn.sendMessage(from, { image: { url: `https://api-xcoders.xyz/api/anime/loli?apikey=${set.Fxc7}` }, caption: mess.success}, { quoted: msg })
+conn.sendMessage(from, { image: { url: `https://api-xcoders.xyz/api/anime/loli?apikey=OGYWHgQLvo` }, caption: mess.success}, { quoted: msg })
+} catch(err) {
+	console.log(err)
+	reply(mess.error.api)
+	}
+	break
+case prefix+'hentai':
+try {
+conn.sendMessage(from, { image: { url: `https://api-xcoders.xyz/api/anime/randomnhentai?apikey=OGYWHgQLvo` }, caption: mess.success}, { quoted: msg })
+} catch(err) {
+	console.log(err)
+	reply(mess.error.api)
+	}
+	break
+case prefix+'neko':
+try {
+conn.sendMessage(from, { image: { url: `https://api-xcoders.xyz/api/anime/neko?apikey=OGYWHgQLvo` }, caption: mess.success}, { quoted: msg })
 } catch(err) {
 	console.log(err)
 	reply(mess.error.api)
@@ -707,7 +723,7 @@ Berikut adalah list harga untuk sewa bot ini
 conn.sendMessage(from, { text: tekssa, contextInfo: { mentionedJid: [sender]} }, { quoted: m })
 break
 			case prefix+'owner':
-			    sendContact(from, '6285158338027', 'Owner Fvckrey', m)
+			    sendContact(from, '6285158338027', 'Owner FvckRey', m)
 			    break
 	/*<------- Converter/Tools ------->*/
 			/*case prefix+'sticker': case prefix+'stiker': case prefix+'s':
@@ -832,7 +848,7 @@ conn.sendMessage(from, {
 				 video: { url: res.data.video },
 				 caption: `✅Sukses Download Video Tiktok\n\nJika ingin mengubah ke audio/music, tekan tombol dibawah, jika tidak terlihat ketik ${prefix}tiktokaudio ${q}`,
 				 buttons: [{buttonId: `${prefix}tiktokaudio ${args[1]}`, buttonText: { displayText: "Audio" }, type: 1 }],
-				 footer: "Create by Sneazy-Bot"
+				 footer: "Create by FvckRey-Bot"
 			      }, { quoted: msg })
 			    .catch(() => reply(mess.error.api))
 			    break
@@ -847,7 +863,7 @@ conn.sendMessage(from, {
 				 caption: `✅Sukses Download Video Twitter
 •Desk: ${data.desc}\n\n${mono}Jika ingin melihat kembali menu bot, silahkan klik tombol dibawah, jika tidak terlihat ketik ${prefix}menu${mono}`,
 				 buttons: [{buttonId: `${prefix}mnu`, buttonText: { displayText: "≻ Back To Menu!" }, type: 1 }],
-				 footer: "Create by Sneazy-Bot"
+				 footer: "Create by FvckRey-Bot"
 			      }, { quoted: msg })
  }).catch(() => reply(mess.error.api))
  break
@@ -862,7 +878,7 @@ conn.sendMessage(from, {
 				 video: { url: data.medias[0].url },
 				 caption: `✅Sukses Download Video Facebook\n\n${mono}Jika ingin melihat kembali menu bot, silahkan klik tombol dibawah, jika tidak terlihat ketik ${prefix}menu${mono}`,
 				 buttons: [{buttonId: `${prefix}mnu`, buttonText: { displayText: "≻ Back To Menu!" }, type: 1 }],
-				 footer: "Create by Sneazy-Bot"
+				 footer: "Create by FvckRey-Bot"
 			      }, { quoted: msg })
  })
  } catch(err) {
@@ -873,7 +889,7 @@ conn.sendMessage(from, {
 •Title: ${data.title}
 •Size: ${data.filesize}\n\n${mono}Jika ingin melihat kembali menu bot, silahkan klik tombol dibawah, jika tidak terlihat ketik ${prefix}menu${mono}`,
 				 buttons: [{buttonId: `${prefix}mnu`, buttonText: { displayText: "≻ Back To Menu!" }, type: 1 }],
-				 footer: "Create by Sneazy-Bot"
+				 footer: "Create by FvckRey-Bot"
 			      }, { quoted: msg })
 			}
 			break
