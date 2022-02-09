@@ -39,7 +39,7 @@ const Gempa = () => new Promise((resolve, reject) => {
 
 const Cuaca = (kota) => {
     return new Promise(async (resolve, reject) => {
-        await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${kota}&units=metric&appid=132d0c03530775bbbfa9b298392866df`)
+        await axios.get(`https://api-xcoders.xyz/api/info/cuaca?query=banyuwangi&apikey=OGYWHgQLvo`)
             .then(async ({
                 data
             }) => {
