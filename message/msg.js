@@ -484,7 +484,7 @@ reply(teks.trim())
 							break
 case prefix+'cekfxc7': case prefix+'cekfxc7key':
 if (!q) return reply(`Contoh:\n${command} beta`)
-let p = await fetchJson(`https://api-xcoders.xyz/api/cekkey?apikey=${q}`)
+let p = await fetchJson(`https://api-xcoders.xyz/api/search/brainly?query=Sejarah%20indonesia&apikey=OGYWHgQLvo`)
 reply(`Status Fxc7 Api
 •Premium: ${p.result.premium ? 'Ya' : 'Tidak'}
 •Apikey: ${p.result.apikey}
@@ -588,7 +588,23 @@ conn.sendMessage(from, { image: { url: `${res.url}` }, caption: `${res.url}`}, {
 	break
 case prefix+'loli':
 try {
-conn.sendMessage(from, { image: { url: `https://api-xcoders.xyz/api/anime/loli?apikey=${set.Fxc7}` }, caption: mess.success}, { quoted: msg })
+conn.sendMessage(from, { image: { url: `https://api-xcoders.xyz/api/anime/loli?apikey=OGYWHgQLvo` }, caption: mess.success}, { quoted: msg })
+} catch(err) {
+	console.log(err)
+	reply(mess.error.api)
+	}
+	break
+case prefix+'hentai':
+try {
+conn.sendMessage(from, { image: { url: `https://api-xcoders.xyz/api/anime/randomnhentai?apikey=OGYWHgQLvo` }, caption: mess.success}, { quoted: msg })
+} catch(err) {
+	console.log(err)
+	reply(mess.error.api)
+	}
+	break
+case prefix+'neko':
+try {
+conn.sendMessage(from, { image: { url: `https://api-xcoders.xyz/api/anime/neko?apikey=OGYWHgQLvo` }, caption: mess.success}, { quoted: msg })
 } catch(err) {
 	console.log(err)
 	reply(mess.error.api)
